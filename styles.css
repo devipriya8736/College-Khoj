@@ -20,8 +20,8 @@
     margin-top: 80px;
 }
 .img-fluid{
-    width:50%;
-    height:100%;
+    width:30%;
+    height:80%;
 }
 #caste,#branch,#dist,#type,#affiliated{
     font-size: clamp(10px,4vw,20px);
@@ -61,7 +61,7 @@ input[type="radio"],input[type="checkbox"]{
 }
 #aff{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto;
 }
 #castt .form-check-label:hover,#types .form-check-label:hover,#district .form-check-label:hover,#branches .form-check-label:hover,#aff .form-check-label:hover{
     transform:scale(1.1);
