@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Khoj</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md fixed-top  navbar-light">
+        <div class="container">
+            <a href="index.html" class="navbar-brand text-light">
+                <b>College Khoj</b>
+            </a>
+        </div>
+    </nav>
+    <div class="container" id="con">
+            <div class="container" id="in1">
+                <p>Simplify your college selection. Choose your desired branch, and we'll instantly provide you with top-ranking colleges for a seamless decision-making process. Your ideal educational journey starts with ease at College Khoj.</p>
+            </div>
+            <div class="conatiner" id="in2">
+                <img src="img.jpeg" alt="college image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="container" id="rank">
+        <label for="RANK" id="ranknum" class="form-check-label">Rank</label>
+        <input type="number" placeholder="Enter your rank" name="rank" id="RANK" class="form-control" required>
+    </div>
+    <div class="container">
+        <h3 id="caste"> Caste</h3>
+        <div id="castt">
+            <input type="radio" id="any" name="caste" value="29" onchange="cast(value)" class="form-check-input">
+        <label for="any" class="form-check-label">ANY</label>
+
+        <input type="radio" id="ocb" name="caste" value="9" onchange="cast(value)" class="form-check-input">
+        <label for="ocb" class="form-check-label">OC BOYS</label>
+
+        <input type="radio" id="ocg" name="caste" value="10" onchange="cast(value)" class="form-check-input">
+        <label for="ocg" class="form-check-label">OC GIRLS</label>
+
+        <input type="radio" id="bcab" name="caste" value="11" onchange="cast(value)" class="form-check-input">
+        <label for="bcab" class="form-check-label">BC A BOYS</label>
+
+        <input type="radio" id="bcag" name="caste" value="12" onchange="cast(value)" class="form-check-input">
+        <label for="bcag" class="form-check-label">BC A GIRLS</label>
+
+        <input type="radio" id="bcbb" name="caste" value="13" onchange="cast(value)" class="form-check-input">
+        <label for="bcbb" class="form-check-label">BC B BOYS</label>
+
+        <input type="radio" id="bcbg" name="caste" value="14" onchange="cast(value)" class="form-check-input">
+        <label for="bcbg" class="form-check-label">BC B GIRLS</label>
+
+        <input type="radio" id="bccb" name="caste" value="15" onchange="cast(value)" class="form-check-input">
+        <label for="bccb" class="form-check-label">BC C BOYS</label>
+
+        <input type="radio" id="bccg" name="caste" value="16" onchange="cast(value)" class="form-check-input">
+        <label for="bccg" class="form-check-label">BC C GIRLS</label>
+
+        <input type="radio" id="bccg" name="caste" value="17" onchange="cast(value)" class="form-check-input">
+        <label for="bccg" class="form-check-label">BC D GIRLS</label>
+
+        <input type="radio" id="bccg" name="caste" value="18" onchange="cast(value)" class="form-check-input">
+        <label for="bccg" class="form-check-label">BC D GIRLS</label>
+
+        <input type="radio" id="bccg" name="caste" value="19" onchange="cast(value)" class="form-check-input">
+        <label for="bccg" class="form-check-label">BC E GIRLS</label>
+
+        <input type="radio" id="bccg" name="caste" value="20" onchange="cast(value)" class="form-check-input">
+        <label for="bccg" class="form-check-label">BC E GIRLS</label>
+
+        <input type="radio" id="bccg" name="caste" value="21" onchange="cast(value)" class="form-check-input">
+        <label for="bccg" class="form-check-label">SC BOYS</label>
+
+        <input type="radio" id="bccg" name="caste" value="22" onchange="cast(value)" class="form-check-input">
+        <label for="bccg" class="form-check-label">SC GIRLS</label>
+
+        <input type="radio" id="bccg" name="caste" value="23" onchange="cast(value)" class="form-check-input">
+        <label for="bccg" class="form-check-label">ST BOYS</label>
+
+        <input type="radio" id="bccg" name="caste" value="24" onchange="cast(value)" class="form-check-input">
+        <label for="bccg" class="form-check-label">ST GIRLS</label>
+
+        <input type="radio" id="bccg" name="caste" value="25" onchange="cast(value)" class="form-check-input">
+        <label for="bccg" class="form-check-label">EWS GEN OU</label>
+
+        <input type="radio" id="bccg" name="caste" value="26" onchange="cast(value)" class="form-check-input">
+        <label for="bccg" class="form-check-label">EWS GIRLS OU</label>
+        </div> 
+    </div>
+    <div class="container">
+        <h3 id="branch"> Branch</h3>
+        <div id="branches">
+            <input type="checkbox" id="AI" name="AI" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="AI" class="form-check-label">AI</label>
+
+        <input type="checkbox" id="AID" name="AID" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="AID" class="form-check-label">AID</label>
+
+        <input type="checkbox" id="AIM" name="AIM" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="AIM" class="form-check-label">AIM</label>
+
+        <input type="checkbox" id="AGR" name="AGR" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="AGR" class="form-check-label">AGR</label>
+
+        <input type="checkbox" id="ANE" name="ANE" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="ANE" class="form-check-label">ANE</label>
+
+        <input type="checkbox" id="ARB" name="ARB" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="ARB" class="form-check-label">ARB</label>
+
+        <input type="checkbox" id="AUT" name="AUT" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="AUT" class="form-check-label">AUT</label>
+
+        <input type="checkbox" id="BIO" name="BIO" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="BIO" class="form-check-label">BIO</label>
+
+        <input type="checkbox" id="BME" name="BME" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="BME" class="form-check-label">BME</label>
+
+        <input type="checkbox" id="BSE" name="BSE" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="BSE" class="form-check-label">BSE</label>
+
+        <input type="checkbox" id="CIV" name="CIV" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CIV" class="form-check-label">CIV</label>
+
+        <input type="checkbox" id="CHE" name="CHE" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CHE" class="form-check-label">CHE</label>
+
+        <input type="checkbox" id="CME" name="CME" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CME" class="form-check-label">CME</label>
+
+        <input type="checkbox" id="CSA" name="CSA" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CSA" class="form-check-label">CSA</label>
+
+        <input type="checkbox" id="CSG" name="CSG" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CSG" class="form-check-label">CSG</label>
+
+        <input type="checkbox" id="CSN" name="CSN" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CSN" class="form-check-label">CSN</label>
+
+        <input type="checkbox" id="CSO" name="CSO" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CSO" class="form-check-label">CSO</label>
+
+        <input type="checkbox" id="CST" name="CST" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CST" class="form-check-label">CST</label>
+
+        <input type="checkbox" id="CSW" name="CSW" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CSW" class="form-check-label">CSW</label>
+
+        <input type="checkbox" id="CIC" name="CIC" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CIC" class="form-check-label">CIC</label>
+
+        <input type="checkbox" id="CS" name="CS" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CS" class="form-check-label">CS</label>
+
+        <input type="checkbox" id="CSB" name="CSB" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CSB" class="form-check-label">CSB</label>
+
+        <input type="checkbox" id="CSC" name="CSC" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CSC" class="form-check-label">CSC</label>
+
+        <input type="checkbox" id="CSD" name="CSD" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CSD" class="form-check-label">CSD</label>
+
+        <input type="checkbox" id="CSE" name="CSE" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CSE" class="form-check-label">CSE</label>
+
+        <input type="checkbox" id="CSI" name="CSI" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CSI" class="form-check-label">CSI</label>
+
+        <input type="checkbox" id="CSM" name="CSM" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="CSM" class="form-check-label">CSM</label>
+
+        <input type="checkbox" id="DRG" name="DRG" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="DRG" class="form-check-label">DRG</label>
+
+        <input type="checkbox" id="DTD" name="DTD" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="DTD" class="form-check-label">DTD</label>
+
+        <input type="checkbox" id="ECA" name="ECA" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="ECA" class="form-check-label">ECA</label>
+
+        <input type="checkbox" id="ECE" name="ECE" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="ECE" class="form-check-label">ECE</label>
+
+        <input type="checkbox" id="ECI" name="ECI" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="ECI" class="form-check-label">ECI</label>
+
+        <input type="checkbox" id="ECM" name="ECM" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="ECM" class="form-check-label">ECM</label>
+
+        <input type="checkbox" id="EEE" name="EEE" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="EEE" class="form-check-label">EEE</label>
+
+        <input type="checkbox" id="EIE" name="EIE" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="EIE" class="form-check-label">EIE</label>
+
+        <input type="checkbox" id="ETE" name="ETE" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="ETE" class="form-check-label">ETE</label>
+
+        <input type="checkbox" id="ETM" name="ETM" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="ETM" class="form-check-label">ETM</label>
+
+
+        <input type="checkbox" id="FDT" name="FDT" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="FDT" class="form-check-label">FDT</label>
+
+        <input type="checkbox" id="GEO" name="GEO" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="GEO" class="form-check-label">GEO</label>
+
+        <input type="checkbox" id="INF" name="INF" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="INF" class="form-check-label">INF</label>
+
+        <input type="checkbox" id="IPE" name="IPE" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="IPE" class="form-check-label">IPE</label>
+
+        <input type="checkbox" id="ITE" name="ITE" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="ITE" class="form-check-label">ITE</label>
+
+        <input type="checkbox" id="MCT" name="MCT" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="MCT" class="form-check-label">MCT</label>
+
+        <input type="checkbox" id="MEC" name="MEC" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="MEC" class="form-check-label">MEC</label>
+
+        <input type="checkbox" id="MET" name="MET" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="MET" class="form-check-label">MET</label>
+
+        <input type="checkbox" id="MIN" name="MIN" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="MIN" class="form-check-label">MIN</label>
+
+        <input type="checkbox" id="MMS" name="MMS" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="MMS" class="form-check-label">MMS</label>
+
+        <input type="checkbox" id="MMT" name="MMT" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="MMT" class="form-check-label">MMT</label>
+
+        <input type="checkbox" id="MTE" name="MTE" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="MTE" class="form-check-label">MTE</label>
+
+        <input type="checkbox" id="PHE" name="PHE" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="PHE" class="form-check-label">PHE</label>
+
+        <input type="checkbox" id="PLG" name="PLG" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="PLG" class="form-check-label">PLG</label>
+
+        <input type="checkbox" id="PHD" name="PHD" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="PHD" class="form-check-label">PHD</label>
+
+        <input type="checkbox" id="PHM" name="PHM" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="PHM" class="form-check-label">PHM</label>
+        
+        <input type="checkbox" id="TEX" name="TEX" value="7" onchange="branch(this.id)" class="form-check-input">
+        <label for="TEX" class="form-check-label">TEX</label>
+        </div>
+    </div>  
+    <div class="container">
+        <h3 id="dist"> District</h3>
+        <div id="district">
+            <input type="checkbox" name="HYD" id="HYD" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="HYD" class="form-check-label">HYD</label>
+
+        <input type="checkbox" name="MDL" id="MDL" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="MDL" class="form-check-label">MDL</label>
+
+        <input type="checkbox" name="RR" id="RR" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="RR" class="form-check-label">RR</label>
+
+        <input type="checkbox" name="MNC" id="MNC" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="MNC" class="form-check-label">MNC</label>
+
+        <input type="checkbox" name="KGM" id="KGM" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="KGM" class="form-check-label">KGM</label>
+
+        <input type="checkbox" name="SRP" id="SRP" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="SRP" class="form-check-label">SRP</label>
+
+        <input type="checkbox" name="WGL" id="WGL" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="WGL" class="form-check-label">WGL</label>
+
+        <input type="checkbox" name="KHM" id="KHM" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="KHM" class="form-check-label">KHM</label>
+
+        <input type="checkbox" name="MED" id="MED" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="MED" class="form-check-label">MED</label>
+
+        <input type="checkbox" name="SRD" id="SRD" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="SRD" class="form-check-label">SRD</label>
+
+        <input type="checkbox" name="KMR" id="KMR" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="KMR" class="form-check-label">KMR</label>
+
+        <input type="checkbox" name="NZB" id="NZB" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="NZB" class="form-check-label">NZB</label>
+
+        <input type="checkbox" name="KRM" id="KRM" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="KRM" class="form-check-label">KRM</label>
+
+        <input type="checkbox" name="JGN" id="JGN" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="JGN" class="form-check-label">JGN</label>
+
+        <input type="checkbox" name="MBN" id="MBN" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="MBN" class="form-check-label">MBN</label>
+
+        <input type="checkbox" name="SDP" id="SDP" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="SDP" class="form-check-label">SDP</label>
+
+        <input type="checkbox" name="JTL" id="JTL" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="JTL" class="form-check-label">JTL</label>
+
+        <input type="checkbox" name="MHB" id="MHB" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="MHB" class="form-check-label">MHB</label>
+
+        <input type="checkbox" name="PDL" id="PDL" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="PDL" class="form-check-label">PDL</label>
+
+        <input type="checkbox" name="SRC" id="SRC" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="SRC" class="form-check-label">SRC</label>
+
+        <input type="checkbox" name="WNP" id="WNP" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="WNP" class="form-check-label">WNP</label>
+
+        <input type="checkbox" name="HNK" id="HNK" value="3" onchange="dist(this.id)" class="form-check-input">
+        <label for="HNK" class="form-check-label">HNK</label>
+        </div>
+    </div>  
+    <div class="container">
+        <h3 id="type"> Type</h3>
+        <div id="types">
+            <input type="checkbox" name="PVT" id="PVT" value="5" onchange="typed(this.id)" class="form-check-input">
+        <label for="PVT" class="form-check-label">PVT</label>
+
+        <input type="checkbox" name="UNIV" id="UNIV" value="5" onchange="typed(this.id)" class="form-check-input">
+        <label for="UNIV" class="form-check-label">UNIV</label>
+
+        <input type="checkbox" name="GOV" id="GOV" value="5" onchange="typed(this.id)" class="form-check-input">
+        <label for="GOV" class="form-check-label">GOV</label>
+
+        <input type="checkbox" name="PVTSF" id="PVTSF" value="5" onchange="typed(this.id)" class="form-check-input">
+        <label for="PVTSF" class="form-check-label">PVTSF</label>
+
+        <input type="checkbox" name="SF" id="SF" value="5" onchange="typed(this.id)" class="form-check-input">
+        <label for="SF" class="form-check-label">SF</label>
+        </div>
+    </div>
+    <div class="container">
+        <h3 id="affiliated"> Affiliated</h3>
+        <div id="aff">
+            <input type="checkbox" name="JNTUH" id="JNTUH" value="28" onchange="affiliated(this.id)" class="form-check-input">
+        <label for="JNTUH" class="form-check-label">JNTUH</label>
+
+        <input type="checkbox" name="OU" id="OU" value="28" onchange="affiliated(this.id)" class="form-check-input">
+        <label for="OU" class="form-check-label">OU</label>
+
+        <input type="checkbox" name="KU" id="KU" value="28" onchange="affiliated(this.id)" class="form-check-input">
+        <label for="KU" class="form-check-label">KU</label>
+
+        <input type="checkbox" name="PJTSAU" id="PJTSAU" value="28" onchange="affiliated(this.id)" class="form-check-input">
+        <label for="PJTSAU" class="form-check-label">PJTSAU</label>
+
+        <input type="checkbox" name="PVNRTVU" id="PVNRTVU" value="28" onchange="affiliated(this.id)" class="form-check-input">
+        <label for="PVNRTVU" class="form-check-label">PVNRTVU</label>
+
+        <input type="checkbox" name="ANURAG UNIVERSITY" id="ANURAG UNIVERSITY" value="28" onchange="affiliated(this.id)" class="form-check-input">
+        <label for="ANURAG UNIVERSITY" class="form-check-label">ANURAG UNIVERSITY</label>
+
+        <input type="checkbox" name="CONSTITUENT COLLEGE" id="CONSTITUENT COLLEGE" value="28" onchange="affiliated(this.id)" class="form-check-input">
+        <label for="CONSTITUENT COLLEGE" class="form-check-label">CONSTITUENT COLLEGE</label>
+
+        <input type="checkbox" name="MGUN" id="MGUN" value="28" onchange="affiliated(this.id)" class="form-check-input">
+        <label for="MGUN" class="form-check-label">MGUN</label>
+
+        <input type="checkbox" name="SR UNIVERSITY" id="SR UNIVERSITY" value="28" onchange="affiliated(this.id)" class="form-check-input">
+        <label for="SR UNIVERSITY" class="form-check-label">SR UNIVERSITY</label>
+        </div>
+    </div>
+    <div class="container" id="btn">
+        <button class="btn btn-primary" onclick="fetchdata()">SUBMIT</button>
+    </div>
+    <div class="container">
+        <div id="loader" style="display: none;">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <table class="table table-hover table-striped table-info" id="table"></table>
+    </div>
+    <script src="script.js">
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.1.0/math.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.1.0/math.number.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    </body>
+</html>

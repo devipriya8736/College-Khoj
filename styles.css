@@ -1,0 +1,168 @@
+.navbar{
+    background-color: rgb(3, 144, 139);
+}
+#con{
+    display: grid;
+    grid-template-columns: auto;
+}
+#in2{
+    margin-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#in1{
+    align-content: center;
+    text-align: left;
+    font-weight: 600;
+    font-size: clamp(15px, 4vw, 30px);
+    margin-top: 80px;
+}
+.img-fluid{
+    max-width:100%;
+    height:80%;
+}
+#caste,#branch,#dist,#type,#affiliated{
+    font-size: clamp(10px,4vw,20px);
+    border-left: 5px solid red;
+    padding-left: 5px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+#table{
+    font-size: clamp(6px,1vw,12px);
+}
+#ranknum{
+    font-size: clamp(20px,1vw,40px);
+    font-weight: 500;
+}
+#RANK{
+    border: 2px solid black;
+}
+input[type="radio"],input[type="checkbox"]{
+    display:none;
+}
+#castt{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+#branches{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+#district{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+#types{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+#aff{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+#castt .form-check-label:hover,#types .form-check-label:hover,#district .form-check-label:hover,#branches .form-check-label:hover,#aff .form-check-label:hover{
+    transform:scale(1.1);
+}
+#branches .form-check-label:hover{
+    transform:scale(1.1);
+}
+#district .form-check-label:hover{
+    transform:scale(1.1);
+}
+#types .form-check-label:hover{
+    transform:scale(1.1);
+}
+#types .form-check-label,#aff .form-check-label,#district .form-check-label,#branches .form-check-label,#castt .form-check-label{
+    border:2px solid rgb(107, 241, 241);
+    background-color: rgb(166, 246, 242);
+    border-radius: 5px;
+    display: inline-block;
+    margin:8px;
+    padding:10px 25px;
+    font-weight: 500;
+    font-size: clamp(6px,1vw,12px);
+}
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:4%;
+    margin-top: 3%;
+}
+.btn{
+    font-size: clamp(10px,4vw,20px);
+    font-weight: 600;
+    background-color: rgb(4, 179, 179);
+    border: 2px solid rgb(2, 154, 154);
+}
+#loader {
+    border: 7px solid rgba(0, 0, 0, 0.1); /* Border color */
+    border-top: 7px solid #007bff; /* Top border color (change as needed) */
+    border-radius: 50%; /* Make it a circle */
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite; /* Animation */
+    margin: 20px auto; /* Center the loader */
+  }
+ @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.container-fluid {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    max-width: 100%; /* Optionally limit the container's width */
+  }
+  
+  table {
+    width: 100%;  
+  }
+  .form-check-input:checked+.form-check-label{
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: white;
+  }
+  .btn:hover{
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  @media only screen and (min-width:768px) and (max-width:1023px){
+    #castt{
+        grid-template-columns: auto auto auto auto auto auto auto;
+    }
+    #branches{
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+    }
+    #district{
+        grid-template-columns: auto auto auto auto auto auto auto;
+    }
+    #types{
+        grid-template-columns: auto auto auto auto auto auto auto;
+    }
+    #aff{
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+    }
+  }
+  @media only screen and (max-width:767px){
+    #castt{
+        grid-template-columns: auto auto auto auto;
+    }
+    #branches{
+        grid-template-columns: auto auto auto auto;
+    }
+    #district{
+        grid-template-columns: auto auto auto auto;
+    }
+    #types{
+        grid-template-columns: auto auto auto auto;
+    }
+    #aff{
+        grid-template-columns: auto auto auto;
+    }
+  }
+  
