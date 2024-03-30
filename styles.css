@@ -20,7 +20,7 @@
     margin-top: 80px;
 }
 .img-fluid{
-    max-width:100%;
+    width:50%;
     height:80%;
 }
 #caste,#branch,#dist,#type,#affiliated{
