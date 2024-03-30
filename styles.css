@@ -18,10 +18,11 @@
     font-weight: 600;
     font-size: clamp(15px, 4vw, 30px);
     margin-top: 80px;
+    margin-bottom: 10%;
 }
 .img-fluid{
-    width:30%;
-    height:80%;
+    font-weight: 700;
+    font-size: clamp(20px,4vw,40px);
 }
 #caste,#branch,#dist,#type,#affiliated{
     font-size: clamp(10px,4vw,20px);
@@ -34,6 +35,7 @@
     font-size: clamp(6px,1vw,12px);
 }
 #ranknum{
+    margin-top: 10%;
     font-size: clamp(20px,1vw,40px);
     font-weight: 500;
 }
