@@ -2,7 +2,7 @@
     background-color: rgb(3, 144, 139);
 }
 #con{
-    display: grid;
+    display:grid;
     grid-template-columns: auto auto;
 }
 #in2{
@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:15vh;
+    margin-top: 15vh;
 }
 #in1{
     align-content: center;
@@ -167,4 +167,3 @@ input[type="radio"],input[type="checkbox"]{
         grid-template-columns: auto auto auto;
     }
   }
-  
