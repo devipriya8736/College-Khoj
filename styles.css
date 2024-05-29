@@ -3,20 +3,20 @@
 }
 #con{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
 }
 #in2{
     margin-top: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    margin-top:15vh;
 }
 #in1{
     align-content: center;
     text-align: left;
     font-weight: 600;
-    font-size: clamp(15px, 4vw, 30px);
+    font-size: clamp(15px, 2.5vw, 30px);
     margin-top: 80px;
     margin-bottom: 10%;
 }
