@@ -151,6 +151,24 @@ input[type="radio"],input[type="checkbox"]{
     }
   }
   @media only screen and (max-width:767px){
+    #in2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+          #in1{
+        align-content: center;
+        text-align: left;
+        font-weight: 600;
+        font-size: clamp(15px, 2.5vh, 30px);
+        margin-top: 80px;
+        margin-bottom: 10%;
+    }
+          #con{
+        display:grid;
+        grid-template-columns: auto;
+    }
     #castt{
         grid-template-columns: auto auto auto auto;
     }
